@@ -10,3 +10,9 @@ def exit(mask):
 
 def between(start, end):
     return (start.cumsum(dim=0) - end.int().cumsum(dim=0)) > 0
+
+
+operators = {
+    'enter': enter,
+    'exit': exit
+}
