@@ -18,7 +18,7 @@ def get_states(op):
     episode = 0
     t_in_episode = 0
 
-    while len(rows) < 10_000:
+    while len(rows) < 20_000:
         action = op(state)
 
         next_state, reward, terminated, truncated, info = env.step(action)
